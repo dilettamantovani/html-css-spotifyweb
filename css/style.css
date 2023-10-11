@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    font-family: 'Titillium Web', sans-serif; 
+    height: 100vh;
+    background-color: #141922;
+    color: white;
+}
+
+#wrapper {
+    height: calc(100% - 70px);
+}
+
+nav {
+    width: 12rem;
+}
+
+main {
+    height: calc(100% - 70px);
+}
+
+#premium {
+    height: 70px;
+}
+
+#premium-btn {
+    padding: .6em 4em;
+    border: solid white .1em;
+    border-radius: 50px;
+    font-size: .7em;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    height: 70px;
+}
