@@ -28,14 +28,25 @@ main {
 }
 
 #premium-btn {
-    padding: .6em 4em;
-    border: solid white .1em;
+    padding: 0.6em 4em;
+    border: solid white 0.1em;
     border-radius: 50px;
-    font-size: .7em;
+    font-size: 0.7em;
     color: white;
     text-decoration: none;
 }
 
 footer {
     height: 70px;
+}
+
+#footer-img {
+    height: 50%;
+    object-fit: cover;
+}
+
+#volume {
+    height: 0.2em;
+    width: 6em;
+    background: linear-gradient(0.25turn, rgba(193, 193, 193, 1) 30%, rgba(90, 90, 90, 1) 30%);
 }
