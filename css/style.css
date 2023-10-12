@@ -45,8 +45,16 @@ footer {
     object-fit: cover;
 }
 
+#time-bar {
+    height: 0.2em;
+    width: 21.4rem;
+    background: linear-gradient(0.25turn, rgba(193, 193, 193, 1) 20%, rgba(90, 90, 90, 1) 20%);
+    margin: 0 1.2em;
+}
+
+
 #volume {
     height: 0.2em;
-    width: 6em;
+    width: 5.9rem;
     background: linear-gradient(0.25turn, rgba(193, 193, 193, 1) 30%, rgba(90, 90, 90, 1) 30%);
 }
