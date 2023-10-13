@@ -15,11 +15,56 @@
     <body>
         <div id="wrapper" class="d-flex">
 
-            <nav class="w-20 bg-black">
+            <nav class="w-20 bg-black pl-1">
+                <img id="nav-logo" class="mt-1" src="img/logo.svg" alt="Spotify Logo">
+               
+                <!-- MENU' -->
+                <div id="nav-menu" class="mt-1">
+                    <div id="home" class="d-flex align-center mb-03">
+                        <a href="#"><img class="nav-item mr-03" src="img/home.svg" alt="Home"></a>
+                        <a class="deco-none c-white" href="#"><h5>Home</h5></a>
+                    </div>
+
+                    <div id="search" class="d-flex align-center mb-03">
+                        <img class="nav-item mr-03" src="img/search.svg" alt="Search">
+                        <h5 class="c-gray">Cerca</h5>
+                    </div>
+
+                    <div id="library" class="d-flex align-center mb-03">
+                        <img class="nav-item mr-03" src="img/libreria.svg" alt="Library">
+                        <h5 class="c-gray">La tua libreria</h5>
+                    </div>
+                </div>
+
+                <!-- PLAYLISTS -->
+                <div id="playlists" class="mt-1">
+                    <h5>PLAYLIST</h5>
+                    <div id="add-new" class="d-flex align-center mt-03">
+                        <i class="fa-sharp fa-solid fa-square-plus c-lightgray mr-03"></i>
+                        <span class="c-gray fw-600">Crea Playlist</span>
+                    </div>
+                </div>
+
+                <div id="playlist-scroll">
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Techno Farm</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">This Is Rammstein</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Techno Workout</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Darkwave</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Charlotte de Witte Complete</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Angels of the Underground - Warehouse Techno 2023</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Dottychu's vault</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">S3RL</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">PSYMAL Records</a>
+                    <a class="playlist-name c-gray py-05 fw-700" href="#">Berghain &bigtriangleup; Techno &bigtriangleup; 2023</a>
+                </div>
 
 
+                <!-- INSTALL -->
+                <div>
 
-                a te ci penso domani
+                </div>
+
+                <!-- PROFILE -->
 
 
             </nav>
@@ -27,15 +72,37 @@
             
             <main class="w-80">
 
+                <!-- PREMIUM -->
                 <section id="premium" class="d-flex align-center justify-end bg-darkblue">
                     <a id="premium-btn" class="pt-1 pb-1 pr-4 pl-4 radius-16" href="#">EFFETTUA L'UPGRADE</a>
                 </section>
 
-
+                <!-- CATEGORIES -->
                 <section>
 
 
                 </section>
+
+                <!-- RECENTLY PLAYED -->
+                <section>
+
+
+                </section>
+
+
+                <!-- MADE FOR -->
+                <section>
+
+
+                </section>
+
+
+                <!-- POPULAR ARTISTS -->
+                <section>
+
+
+                </section>
+
 
 
             </main>
@@ -48,6 +115,7 @@
 
             <footer class="d-flex bg-darkgrey">
 
+                <!-- FOOTER LEFT -->
                 <div id="footer-left" class="d-flex justify-around align-center w-20">
                     <img id="footer-img" src="img/sinister.jpeg" alt="Sinister LP">
                     <div id="song">
@@ -61,7 +129,8 @@
                     <i class="fa-regular fa-folder"></i>
                 </div>
 
-                <div id="footer-center" class="d-flex flex-column justify-center align-center bg-darkblue w-60">
+                <!-- FOOTER CENTER -->
+                <div id="footer-center" class="d-flex flex-column justify-center align-center w-60">
                     <div id="player">
                         <i class="fa-solid fa-shuffle"></i>
                         <i class="fa-solid fa-backward-step"></i>
@@ -70,6 +139,7 @@
                         <i class="fa-solid fa-rotate-right"></i>
                     </div>
 
+                    <!-- FOOTER RIGHT -->
                     <div id="time" class="d-flex justify-between align-center">
                         <span>0:25</span>
                         <div id="time-bar" class="radius-16"></div>

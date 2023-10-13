@@ -15,10 +15,33 @@ body {
     height: calc(100% - 70px);
 }
 
+a { text-decoration: none; }
+
+/********************* NAV *********************/
 nav {
     width: 12rem;
 }
 
+#nav-logo {
+    width: 40%;
+}
+
+.nav-item {
+    width: 1.3em;
+}
+
+.fa-square-plus { font-size: 2em; }
+
+#playlist-scroll { overflow: scroll; }
+
+.playlist-name { 
+    display: block; 
+    font-size: 0.83em;
+}
+
+
+
+/********************* MAIN *********************/
 main {
     height: calc(100% - 70px);
 }
@@ -36,6 +59,7 @@ main {
     text-decoration: none;
 }
 
+/********************* FOOTER *********************/
 footer {
     height: 70px;
 }
