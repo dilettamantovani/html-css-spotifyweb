@@ -1,3 +1,7 @@
+:root {
+    --navbar-width: 12rem;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,34 +22,60 @@ body {
 a { text-decoration: none; }
 
 /********************* NAV *********************/
-nav {
-    width: 12rem;
-}
-
 #nav-logo {
-    width: 40%;
+    width: 50%;
 }
 
-.nav-item {
-    width: 1.3em;
-}
+.nav-item { width: 1.3em; }
 
 .fa-square-plus { font-size: 2em; }
 
-#playlist-scroll { overflow: scroll; }
+#playlist-scroll { 
+    overflow-y: scroll; 
+    height: 30vh;
+}
 
-.playlist-name { 
+/* custom scrollbar */
+::-webkit-scrollbar { width: 0.2em; }
+  
+::-webkit-scrollbar-track { background: black; }
+  
+::-webkit-scrollbar-thumb { background: #a3a3a3; }
+
+
+.playlist-item { 
     display: block; 
     font-size: 0.83em;
 }
 
+/* INSTALL */
+#install {height: fit-content;}
 
+#download { border-bottom: solid 0.01em #717171; }
+
+.fa-arrow-down { 
+    border: solid #a3a3a3 0.1em;
+    font-size: 0.4em;
+    aspect-ratio: 1 / 1;
+    padding: 0.3em 0.4em;
+    margin-top: 0.6em;
+
+}
+
+#pro-pic {
+    width: 1.3em;
+    aspect-ratio: 1 / 1;
+    margin-top: 0.6em;
+}
 
 /********************* MAIN *********************/
 main {
     height: calc(100% - 70px);
+    width: calc(100% - var(--navbar-width));
+    overflow-y: auto;
 }
 
+/* PREMIUM */
 #premium {
     height: 70px;
 }
@@ -59,10 +89,15 @@ main {
     text-decoration: none;
 }
 
-/********************* FOOTER *********************/
-footer {
-    height: 70px;
+/* PLAYED */
+.played-img { 
+    height: 50%; 
+    object-fit: cover;
 }
+
+
+/********************* FOOTER *********************/
+footer { height: 70px; }
 
 #footer-img {
     height: 50%;

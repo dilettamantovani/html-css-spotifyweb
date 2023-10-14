@@ -12,6 +12,12 @@
 .align-center { align-items: center; }
 
 
+/********* DISPLAY *********/
+.d-inline { display: inline; }
+.d-block { display: block; }
+.d-ib { display: inline-block; }
+
+
 /********* POSITION *********/
 .p-fixed { position: fixed; }
 .p-relative { position: relative; }
@@ -19,6 +25,7 @@
 
 
 /********* WIDTH *********/
+.w-13 { width: 13%; }
 .w-20 { width: 20%; }
 .w-25 { width: 25%; } 
 .w-30 { width: 30%; }
@@ -30,12 +37,22 @@
 .w-70 { width: 70%; }
 .w-75 { width: 75%; }
 .w-80 { width: 80%; } 
+.w-87 { width: 87%; } 
 .w-100 { width: 100%; }
 
 
 /********* PADDINGS *********/
 
 /***EM***/
+/*0.3em*/
+.p-03 { padding: 0.3em; }
+.pt-03 { padding-top: 0.3em; }
+.pr-03 { padding-right: 0.3em; }
+.pb-03 { padding-bottom: 0.3em; }
+.pl-03 { padding-left: 0.3em; }
+.py-03 { padding: 0.3em 0; }
+.px-03 { padding: 0 0.3em; }
+
 /*0.5em*/
 .p-05 { padding: 0.5em; }
 .pt-05 { padding-top: 0.5em; }
@@ -152,6 +169,15 @@
 .my-03 { margin: 0.3em 0; }
 .mx-03 { margin: 0 0.3em; }
 
+/*0.5em*/
+.m-05 { margin: 0.5em; }
+.mt-05 { margin-top: 0.5em; }
+.mr-05 { margin-right: 0.5em; }
+.mb-05 { margin-bottom: 0.5em; }
+.ml-05 { margin-left: 0.5em; }
+.my-05 { margin: 0.5em 0; }
+.mx-05 { margin: 0 0.5em; }
+
 /*1em*/
 .m-1 { margin: 1em; }
 .mt-1 { margin-top: 1em; }
@@ -228,7 +254,7 @@
 .bg-darkblue { background-color: #080B12; }
 .bg-darkgrey { background-color: #282828; }
 .bg-black { background-color: black; }
-
+.bg-gray { background-color: #6F6F6F; }
 
 
 
@@ -247,11 +273,13 @@
 
 /********* TXT *********/
 .deco-none { text-decoration: none; }
+.txt-center { text-align: center; }
 
 
 
 /********* BORDER COLOR *********/
 .b-white { border-color: white; }
+
 
 
 
