@@ -162,11 +162,40 @@ footer { height: 10vh; }
 
 /********************* RESPONSIVE *********************/
 /* Tablet */
+@media screen and (max-width: 768px) {
+    :root { font-size: small; }
 
+    #played-container { justify-content: flex-start;}
 
+    .played-item, .made-item, .popular-item { width: calc(100% / 4 - 2rem); }
+
+    #main-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
 
 /* Mobile S */
+@media screen and (max-width: 576px) {
 
+    .played-item, .made-item, .popular-item { 
+        width: calc(100% / 2 - 6rem); 
+        margin: 3rem;
+    }
+
+    #played-container { flex-wrap: wrap;}
+
+    #premium-btn { height: 10vh; }
+
+    #footer-left i { display: block; }
+
+    
+    
+
+}
 
 
 /* Mobile XS */
+@media screen and (max-width: 490px) {
+}
