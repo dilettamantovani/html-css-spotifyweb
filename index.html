@@ -15,29 +15,29 @@
     <body>
         <div id="wrapper" class="d-flex">
 
-            <nav class="d-flex flex-column bg-black pl-1">
-                <img id="nav-logo" class="mt-1" src="img/logo.svg" alt="Spotify Logo">
+            <nav class="d-flex flex-column bg-black">
+                <img id="nav-logo" class="mt-1 pl-1" src="img/logo.svg" alt="Spotify Logo">
                
                 <!-- MENU' -->
                 <div id="nav-menu" class="mt-1">
-                    <div id="home" class="d-flex align-center mb-03">
+                    <div id="home" class="d-flex align-center mb-03 pl-1">
                         <a href="#"><img class="nav-item mr-03" src="img/home.svg" alt="Home"></a>
                         <a class="deco-none c-gray" href="#"><h5>Home</h5></a>
                     </div>
 
-                    <div id="search" class="d-flex align-center mb-03">
+                    <div id="search" class="d-flex align-center mb-03 pl-1">
                         <img class="nav-item mr-03" src="img/search.svg" alt="Search">
                         <a href="#"><h5 class="c-gray">Cerca</h5></a>
                     </div>
 
-                    <div id="library" class="d-flex align-center mb-03">
+                    <div id="library" class="d-flex align-center mb-03 pl-1">
                         <img class="nav-item mr-03" src="img/libreria.svg" alt="Library">
                         <a href="#"><h5 class="c-gray">La tua libreria</h5></a>
                     </div>
                 </div>
 
                 <!-- PLAYLISTS -->
-                <div id="playlists" class="my-1">
+                <div id="playlists" class="my-1 pl-1">
                     <h5>PLAYLIST</h5>
                     <div id="add-new" class="d-flex align-center mt-03">
                         <i class="fa-sharp fa-solid fa-square-plus c-lightgray mr-03"></i>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div id="playlist-scroll" class="px-05 mb-05">
+                <div id="playlist-scroll" class="px-05 mb-05 pl-1">
                     <a class="playlist-item c-gray mt-1 py-02 fw-700" href="#">Techno Farm</a>
                     <a class="playlist-item c-gray mt-1 py-02 fw-700" href="#">This Is Rammstein</a>
                     <a class="playlist-item c-gray mt-1 py-02 fw-700" href="#">Techno Workout</a>
@@ -60,7 +60,7 @@
 
 
                 <!-- INSTALL -->
-                <div id="install" class="d-flex flex-column">
+                <div id="install" class="d-flex flex-column pl-1">
                     <div id="download" class="d-flex align-center w-87 pb-03">
                         <i class="fa-solid fa-arrow-down c-lightgray radius-50 mr-05"></i>
                         <a href="#"><h5 class="c-gray d-inline ml-05">Installa app</h5></a>
@@ -82,13 +82,31 @@
                 </section>
 
                 <!-- CATEGORIES -->
-                <section id="categories" class="d-flex justify-center py-1"> <!-- qui c'è da giocare sulla width -->
-                    <a class="m-1" href="#"><h5 class="c-gray">IN EVIDENZA</h5></a> <!-- mettere bordo verde all'hover -->
-                    <a class="m-1" href="#"><h5 class="c-gray">PODCAST</h5></a> <!-- mettere bordo verde all'hover -->
-                    <a class="m-1" href="#"><h5 class="c-gray">CLASSIFICHE</h5></a> <!-- mettere bordo verde all'hover -->
-                    <a class="m-1" href="#"><h5 class="c-gray">GENERI E MOOD</h5></a> <!-- mettere bordo verde all'hover -->
-                    <a class="m-1" href="#"><h5 class="c-gray">NUOVE USCITE</h5></a> <!-- mettere bordo verde all'hover -->
-                    <a class="m-1" href="#"><h5 class="c-gray">SCOPRI</h5></a> <!-- mettere bordo verde all'hover -->
+                <section id="main-menu" class="d-flex justify-center py-1"> <!-- qui c'è da giocare sulla width -->
+                    <div class="menu-item m-1">
+                        <a href="#"><h5 class="categories c-gray">IN EVIDENZA</h5></a> <!-- mettere bordo verde all'hover -->
+                        <div class="border-green d-none bg-green"></div>
+                    </div>
+                    <div class="menu-item m-1">
+                        <a href="#"><h5 class="categories c-gray">PODCAST</h5></a> <!-- mettere bordo verde all'hover -->
+                        <div class="border-green d-none bg-green"></div>
+                    </div>
+                    <div class="menu-item m-1">
+                        <a href="#"><h5 class="categories c-gray">CLASSIFICHE</h5></a> <!-- mettere bordo verde all'hover -->
+                        <div class="border-green d-none bg-green"></div>
+                    </div>
+                    <div class="menu-item m-1">
+                        <a href="#"><h5 class="categories c-gray">GENERI E MOOD</h5></a> <!-- mettere bordo verde all'hover -->
+                        <div class="border-green d-none bg-green"></div>
+                    </div>
+                    <div class="menu-item m-1">
+                        <a href="#"><h5 class="categories c-gray">NUOVE USCITE</h5></a> <!-- mettere bordo verde all'hover -->
+                        <div class="border-green d-none bg-green"></div>
+                    </div>
+                    <div class="menu-item m-1">
+                        <a href="#"><h5 class="categories c-gray">SCOPRI</h5></a> <!-- mettere bordo verde all'hover -->
+                        <div class="border-green d-none bg-green"></div>
+                    </div>
                 </section>
 
                 <!-- RECENTLY PLAYED -->
@@ -98,7 +116,7 @@
                         <div class="played-item">
                             <div class="played-img p-relative">
                                 <a href="#"><img class="w-100" src="img/metal_lifting.jpg" alt="Heavy metal Playlist"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
 
                             <div class="item-txt py-05">
@@ -110,7 +128,7 @@
                         <div class="played-item">
                             <div class="played-img p-relative">
                                 <a href="#"><img class="w-100" src="img/stranger.jpeg" alt="Stranger Things Soundtrack"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
 
                             <div class="item-txt py-05">
@@ -122,7 +140,7 @@
                         <div class="played-item">
                             <div class="played-img p-relative">
                                 <a href="#"><img class="w-100" src="img/aquietplace.jpeg" alt="A Quiet Place Soundtrack"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
 
                             <div class="item-txt py-05">
@@ -134,7 +152,7 @@
                         <div class="played-item">
                             <div class="played-img p-relative">
                                 <a href="#"><img class="w-100" src="img/split.jpeg" alt="Split Soundtrack"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
 
                             <div class="item-txt py-05">
@@ -146,7 +164,7 @@
                         <div class="played-item">
                             <div class="played-img p-relative">
                                 <a href="#"><img class="w-100" src="img/cure.jpeg" alt="A cure for wellness"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
 
                             <div class="item-txt py-05">
@@ -158,7 +176,7 @@
                         <div class="played-item">
                             <div class="played-img p-relative">
                                 <a href="#"><img class="w-100" src="img/sinister.jpeg" alt="Sinister"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
 
                             <div class="item-txt py-05">
@@ -179,7 +197,7 @@
                         <div class="made-item mr-1">
                             <div class="made-img p-relative">
                                 <a href="#"><img class="w-100" src="img/radar.jpeg" alt="Release Radar"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
                             <a href="#"><h5 class="c-white txt-center py-05">Release Radar</h5></a>
                         </div>
@@ -187,7 +205,7 @@
                         <div class="made-item ml-1">
                             <div class="made-img p-relative">
                                 <a href="#"><img class="w-100" src="img/mixdaily.jpeg" alt="Daily Mix"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
                             <a href="#"><h5 class="c-white txt-center py-05">Daily Mix</h5></a>
                         </div>
@@ -204,7 +222,7 @@
                         <div class="popular-item mr-1">
                             <div class="popular-img p-relative">
                                 <a href="#"><img class="w-100 radius-50" src="img/youg.jpeg" alt="Lana Del Reyr"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
                             <a href="#"><h5 class="c-white txt-center py-05">Lana Del Rey</h5></a>
                         </div>
@@ -212,7 +230,7 @@
                         <div class="popular-item ml-1">
                             <div class="popular-img p-relative">
                                 <a href="#"><img class="w-100 radius-50" src="img/einaudi.jpeg" alt="Ludovico Einaudi"></a>
-                                <i class="fa-regular fa-circle-play p-absolute"></i>
+                                <i class="fa-regular fa-circle-play p-absolute d-none"></i>
                             </div>
                             <a href="#"><h5 class="c-white txt-center py-05">Ludovico Einaudi</h5></a>
                         </div>

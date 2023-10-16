@@ -15,20 +15,23 @@ body {
     color: white;
 }
 
-#wrapper {
-    height: calc(100% - 70px);
-}
+#wrapper { height: calc(100% - 70px); }
 
 a { text-decoration: none; }
 
 h2 { line-height: 1em; }
 
+/* custom scrollbar */
+::-webkit-scrollbar { width: 0.2em; }
+  
+::-webkit-scrollbar-track { background: black; }
+  
+::-webkit-scrollbar-thumb { background: #a3a3a3; }
+
 /********************* NAV *********************/
 nav { width: 12rem; }
 
-#nav-logo {
-    width: 50%;
-}
+#nav-logo { width: 50%; }
 
 .nav-item { width: 1.3em; }
 
@@ -39,23 +42,13 @@ nav { width: 12rem; }
     height: 30vh;
 }
 
-/* custom scrollbar */
-::-webkit-scrollbar { width: 0.2em; }
-  
-::-webkit-scrollbar-track { background: black; }
-  
-::-webkit-scrollbar-thumb { background: #a3a3a3; }
-
-
 .playlist-item { 
     display: block; 
     font-size: 0.83em;
 }
 
 /* INSTALL */
-#install {
-    margin-top: auto;
-}
+#install { margin-top: auto; }
 
 #download { border-bottom: solid 0.01em #717171; }
 
@@ -65,7 +58,6 @@ nav { width: 12rem; }
     aspect-ratio: 1 / 1;
     padding: 0.3em 0.4em;
     margin-top: 0.6em;
-
 }
 
 #pro-pic {
@@ -82,23 +74,6 @@ main {
 
 #recently, #made, #popular { margin: 1rem; }
 
-.section-sub { font-size: 0.7em; }
-
-/* PREMIUM */
-#premium {
-    height: 70px;
-}
-
-#premium-btn {
-    padding: 0.6em 4em;
-    border: solid white 0.1em;
-    border-radius: 50px;
-    font-size: 0.7em;
-    color: white;
-    text-decoration: none;
-}
-
-/* PLAYED */
 .played-item, .made-item, .popular-item { width: calc(100% / 6 - 2rem); }
 
 .played-img i, .made-img i, .popular-img i {
@@ -109,19 +84,32 @@ main {
     display: none;
 }
 
-/* POPULAR ARTISTS */
+.section-sub { font-size: 0.7em; }
 
+/* PREMIUM */
+#premium { height: 10vh; }
 
+#premium-btn {
+    padding: 0.6em 4em;
+    border: solid white 0.1em;
+    border-radius: 50px;
+    font-size: 0.7em;
+    color: white;
+    text-decoration: none;
+}
 
+/* MAIN MENU */
+.border-green {
+    height: 2px;
+    margin: auto;  
+    width: 2rem;
+}
 
 /********************* FOOTER *********************/
-footer { height: 70px; }
+footer { height: 10vh; }
 
 #song h5 { line-height: 0.7em; }
 #song span { font-size: 0.8em }/* icone favorite e folder fai un active */
-
-
-#player .fa-circle-play { font-size: 1.6em; }
 
 #time-bar {
     height: 0.2em;
@@ -139,3 +127,46 @@ footer { height: 70px; }
     width: 5.9rem;
     background: linear-gradient(0.25turn, rgba(193, 193, 193, 1) 30%, rgba(90, 90, 90, 1) 30%);
 }
+
+/********************* HOVER *********************/
+#home:hover, #search:hover, #library:hover { border-left: 1px solid #ADFF2F; }
+
+#home:hover h5, #search:hover h5, #library:hover h5 {color: white; }
+
+.playlist-item:hover {
+    color: white;
+    text-indent: 1em;
+}
+
+#premium-btn:hover {
+    scale: 105%;
+    filter: invert(30%);	
+}
+
+.categories:hover {
+    color: white;
+}
+
+.menu-item:hover .border-green { display: block; }
+
+.played-item:hover img, .made-item:hover img, .popular-item:hover img { filter: brightness(65%); }
+
+.played-img:hover i, .made-img:hover i, .popular-img:hover i { display: block; }
+
+
+#footer-left:hover i { 
+    color: #ADFF2F; 
+    cursor: pointer;
+}
+
+
+/********************* RESPONSIVE *********************/
+/* Tablet */
+
+
+
+/* Mobile S */
+
+
+
+/* Mobile XS */

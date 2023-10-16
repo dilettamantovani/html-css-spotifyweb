@@ -16,6 +16,7 @@
 .d-inline { display: inline; }
 .d-block { display: block; }
 .d-ib { display: inline-block; }
+.d-none { display: none; }
 
 
 /********* POSITION *********/
@@ -273,7 +274,7 @@
 .bg-darkgrey { background-color: #282828; }
 .bg-black { background-color: black; }
 .bg-gray { background-color: #6F6F6F; }
-
+.bg-green { background-color: #ADFF2F; }
 
 
 
