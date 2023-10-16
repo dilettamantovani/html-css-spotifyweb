@@ -21,7 +21,11 @@ body {
 
 a { text-decoration: none; }
 
+h2 { line-height: 1em; }
+
 /********************* NAV *********************/
+nav { width: 12rem; }
+
 #nav-logo {
     width: 50%;
 }
@@ -70,10 +74,13 @@ a { text-decoration: none; }
 
 /********************* MAIN *********************/
 main {
-    height: calc(100% - 70px);
-    width: calc(100% - var(--navbar-width));
-    overflow-y: auto;
+    width: calc(100% - 12rem);
+    overflow-y: scroll;
 }
+
+#recently, #made, #popular { margin: 1rem; }
+
+.section-sub { font-size: 0.7em; }
 
 /* PREMIUM */
 #premium {
@@ -90,19 +97,29 @@ main {
 }
 
 /* PLAYED */
-.played-img { 
-    height: 50%; 
-    object-fit: cover;
+.played-item, .made-item, .popular-item { width: calc(100% / 6 - 2rem); }
+
+.played-img i, .made-img i, .popular-img i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    display: none;
 }
+
+/* POPULAR ARTISTS */
+
+
 
 
 /********************* FOOTER *********************/
 footer { height: 70px; }
 
-#footer-img {
-    height: 50%;
-    object-fit: cover;
-}
+#song h5 { line-height: 0.7em; }
+#song span { font-size: 0.8em }/* icone favorite e folder fai un active */
+
+
+#player .fa-circle-play { font-size: 1.6em; }
 
 #time-bar {
     height: 0.2em;
@@ -111,6 +128,9 @@ footer { height: 70px; }
     margin: 0 1.2em;
 }
 
+#time span { 
+    font-size: 0.65em;
+}
 
 #volume {
     height: 0.2em;
